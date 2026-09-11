@@ -4,9 +4,6 @@
   padding: 0;
 }
 
-/* 
-ОБЩИЕ СТИЛИ СТРАНИЦЫ
-*/
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -15,9 +12,6 @@ body {
   line-height: 1.7;
 }
 
-/* 
-ШАПКА (header)
-*/  
 header {
   background-color: #ff6b35;
   padding: 0 40px;
@@ -45,9 +39,6 @@ h1 {
   letter-spacing: 0.5px;
 }
 
-/* 
-НАВИГАЦИЯ (nav)
-*/
 nav {
   margin: 0;
   padding: 0;
@@ -71,18 +62,12 @@ nav a:hover {
   color: #ff6b35;
 }
 
-/* 
-ГЛАВНЫЙ КОНТЕНТ (main)
-*/
 main {
   max-width: 1100px;
   margin: 40px auto;
   padding: 0 24px;
 }
 
-/*
-ОБЩИЕ СТИЛИ СЕКЦИЙ
-*/
 section {
   margin: 0 0 56px 0;
   padding: 40px;
@@ -101,9 +86,6 @@ h2 {
   border-bottom: 3px solid #ffe0d4;
 }
 
-/*
-СЕКЦИЯ «О КОМПАНИИ»
-*/
 .about-content {
   display: flex;
   gap: 32px;
@@ -128,9 +110,6 @@ h2 {
   min-width: 260px;
 }
 
-/*
-СЕКЦИЯ «ПРЕИМУЩЕСТВА»
-*/
 .advantages-list {
   list-style: none;
   padding: 0;
@@ -159,9 +138,6 @@ h2 {
   flex-shrink: 0;
 }
 
-/*
-СЕКЦИЯ «ПОПУЛЯРНЫЕ БЛЮДА» — ТАБЛИЦА
-*/
 .table-wrapper {
   overflow-x: auto;
 }
@@ -203,9 +179,6 @@ tbody tr:hover {
   transition: background-color 0.2s;
 }
 
-/*
-   ФУТЕР (footer)
-*/
 footer {
   background-color: black;
   color: white;
