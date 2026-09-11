@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  box-sizing: border-box 
+  padding: 0;
+}
+
+/* 
+ОБЩИЕ СТИЛИ СТРАНИЦЫ
+*/
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #2d2d2d;
+  background-color: #f7f5f0;
+  line-height: 1.7;
+}
+
+/* 
+ШАПКА (header)
+*/  
+header {
+  background-color: #ff6b35;
+  padding: 0 40px;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* 
+НАВИГАЦИЯ (nav)
+*/
+nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+nav a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 24px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #ff6b35;
+}
+
+/* 
+ГЛАВНЫЙ КОНТЕНТ (main)
+*/
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/*
+ОБЩИЕ СТИЛИ СЕКЦИЙ
+*/
+section {
+  margin: 0 0 56px 0;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ff6b35;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffe0d4;
+}
+
+/*
+СЕКЦИЯ «О КОМПАНИИ»
+*/
+.about-content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.section-about p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #444444;
+  flex: 1;
+  min-width: 260px;
+}
+
+/*
+СЕКЦИЯ «ПРЕИМУЩЕСТВА»
+*/
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #fff8f5;
+  border-left: 4px solid #ff6b35;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #333333;
+}
+
+.adv-icon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/*
+СЕКЦИЯ «ПОПУЛЯРНЫЕ БЛЮДА» — ТАБЛИЦА
+*/
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #2d2d2d;
+}
+
+thead tr {
+  background-color: #ff6b35;
+  color: #ffffff;
+}
+
+th {
+  padding: 14px 16px;
+  border: 1px solid #e0a98a;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+td {
+  padding: 12px 16px;
+  border: 1px solid #e8e2dc;
+  text-align: left;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff8f5;
+}
+
+tbody tr:hover {
+  background-color: #ffe0d4;
+  transition: background-color 0.2s;
+}
+
+/*
+   ФУТЕР (footer)
+*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 24px;
+  margin: 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-brand {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ff6b35;
+  margin-bottom: 4px;
+}
+
+footer p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #cccccc;
+}
+
+footer a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #ff9d79;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ff6b35;
+}
+
+.footer-copy {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #777777;
+}
