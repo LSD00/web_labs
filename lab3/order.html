@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>RuTea - Собрать заказ</title>
+</head>
+<body>
+    <header>
+        <h1>RuTea</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="index.html#about-us">О нас</a>
+            <a href="index.html#reviews">Отзывы</a>
+            <a class="active" href="order.html">Собрать заказ</a>
+            <a href="#shop-footer">Контакты</a>
+        </nav>
+    </header>
+    <main class="lunch-main">
+        <h2 class="page-title">Собрать заказ</h2>
+        <section class="menu-section">
+            <h2>Черный чай</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="images/grey.jpg" alt="Черный чай Эрл Грей">
+                    <p class="dish-price">180 ₽</p>
+                    <p class="dish-name">Эрл Грей с бергамотом</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button type="button">Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="images/assam.jpg" alt="Черный чай Ассам">
+                    <p class="dish-price">170 ₽</p>
+                    <p class="dish-name">Классический Ассам</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button type="button">Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="images/grey.jpg" alt="Пряный чай масала">
+                    <p class="dish-price">220 ₽</p>
+                    <p class="dish-name">Пряный чай масала с молоком</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button type="button">Добавить</button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Зеленый чай и улуны</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="images/tea.jpg" alt="Зеленый чай сенча">
+                    <p class="dish-price">190 ₽</p>
+                    <p class="dish-name">Японская сенча</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button type="button">Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="images/tea.jpg" alt="Зеленый чай с жасмином">
+                    <p class="dish-price">200 ₽</p>
+                    <p class="dish-name">Зеленый чай с жасмином</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button type="button">Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="images/assam.jpg" alt="Молочный улун">
+                    <p class="dish-price">230 ₽</p>
+                    <p class="dish-name">Молочный улун</p>
+                    <p class="dish-weight">400 мл</p>
+                    <button type="button">Добавить</button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Выпечка к чаю</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="images/cr.jpg" alt="Круассан">
+                    <p class="dish-price">160 ₽</p>
+                    <p class="dish-name">Круассан с миндальным кремом</p>
+                    <p class="dish-weight">120 г</p>
+                    <button type="button">Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="images/xleb.jpg" alt="Булочка с корицей">
+                    <p class="dish-price">140 ₽</p>
+                    <p class="dish-name">Булочка с корицей</p>
+                    <p class="dish-weight">110 г</p>
+                    <button type="button">Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="images/xleb_mnoga.jpg" alt="Лимонный тарт">
+                    <p class="dish-price">210 ₽</p>
+                    <p class="dish-name">Лимонный тарт</p>
+                    <p class="dish-weight">130 г</p>
+                    <button type="button">Добавить</button>
+                </div>
+            </div>
+        </section>
+        <section class="order-section" id="make-order">
+            <h2>Сделать заказ</h2>
+            <form class="order-form" action="#" method="post">
+                <div class="order-column">
+                    <h3>Ваш заказ</h3>
+                    <label for="black-tea">Черный чай</label>
+                    <select id="black-tea" name="black-tea">
+                        <option value="">-- Выберите чай --</option>
+                        <option value="earl-grey">Эрл Грей с бергамотом</option>
+                        <option value="assam">Классический Ассам</option>
+                        <option value="masala">Пряный чай масала с молоком</option>
+                    </select>
+
+                    <label for="green-tea">Зеленый чай или улун</label>
+                    <select id="green-tea" name="green-tea">
+                        <option value="">-- Выберите чай --</option>
+                        <option value="sencha">Японская сенча</option>
+                        <option value="jasmine">Зеленый чай с жасмином</option>
+                        <option value="oolong">Молочный улун</option>
+                    </select>
+
+                    <label for="pastry">Выпечка</label>
+                    <select id="pastry" name="pastry">
+                        <option value="">-- Выберите выпечку --</option>
+                        <option value="croissant">Круассан с миндальным кремом</option>
+                        <option value="cinnamon-roll">Булочка с корицей</option>
+                        <option value="lemon-tart">Лимонный тарт</option>
+                    </select>
+
+                    <label for="comment">Комментарий к заказу</label>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
+                </div>
+
+                <div class="order-column">
+                    <h3>Ваши данные</h3>
+                    <label for="name">Имя</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label class="checkbox-label">
+                        <input name="subscribe" type="checkbox" checked>
+                        Получать информацию о скидках и акциях
+                    </label>
+
+                    <label for="phone">Номер телефона</label>
+                    <input id="phone" name="phone" type="tel" required>
+
+                    <label for="address">Адрес доставки</label>
+                    <input id="address" name="address" type="text" required>
+                    <p class="form-note">Доставка осуществляется только по Москве</p>
+
+                    <p class="delivery-title">Время доставки:</p>
+                    <label class="radio-label">
+                        <input name="delivery-time" type="radio" value="fast" checked>
+                        Как можно скорее
+                    </label>
+                    <label class="radio-label">
+                        <input name="delivery-time" type="radio" value="selected">
+                        К указанному времени
+                    </label>
+
+                    <label for="time">Укажите время доставки</label>
+                    <input id="time" name="time" type="time" min="07:00" max="23:00">
+                    <p class="form-note">Доступное время доставки с 7:00 до 23:00</p>
+
+                    <div class="order-buttons">
+                        <button type="reset">Сбросить</button>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="shop-footer">
+        <ul>
+            <li>Телефон: <a href="tel:+79777777777">+79777777777</a></li>
+            <li>Электронная почта для связи: <a href="mailto:contact@rutea.onion">contact@rutea.onion</a></li>
+            <li>Адрес: 107031, г. Москва, ул. Большая Лубянка, д. 1</li>
+        </ul>
+    </footer>
+</body>
+</html>
