@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <script src="dishes.js" defer></script>
+    <script src="render-menu.js" defer></script>
+    <script src="order.js" defer></script>
+    <title>RuTea - Собрать заказ</title>
+</head>
+<body>
+    <header>
+        <h1>RuTea</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="index.html#about-us">О нас</a>
+            <a href="index.html#reviews">Отзывы</a>
+            <a class="active" href="order.html">Собрать заказ</a>
+            <a href="#shop-footer">Контакты</a>
+        </nav>
+    </header>
+    <main class="lunch-main">
+        <h2 class="page-title">Собрать заказ</h2>
+        <section class="menu-section" data-category="black-tea">
+            <h2>Черный чай</h2>
+            <div class="dishes"></div>
+        </section>
+        <section class="menu-section" data-category="green-tea">
+            <h2>Зеленый чай и улуны</h2>
+            <div class="dishes"></div>
+        </section>
+        <section class="menu-section" data-category="pastry">
+            <h2>Выпечка к чаю</h2>
+            <div class="dishes"></div>
+        </section>
+        <template id="dish-template">
+            <div class="dish" data-dish="">
+                <img class="dish-image" src="" alt="">
+                <p class="dish-price"></p>
+                <p class="dish-name"></p>
+                <p class="dish-weight"></p>
+                <button type="button" aria-pressed="false">Добавить</button>
+            </div>
+        </template>
+        <section class="order-section" id="make-order">
+            <h2>Сделать заказ</h2>
+            <form class="order-form" action="#" method="post">
+                <div class="order-column">
+                    <h3>Ваш заказ</h3>
+                    <p class="order-empty">Ничего не выбрано</p>
+                    <div class="order-summary" hidden>
+                        <div class="order-entry" data-category="black-tea">
+                            <h4>Черный чай</h4>
+                            <p class="chosen-dish">Чай не выбран</p>
+                        </div>
+                        <div class="order-entry" data-category="green-tea">
+                            <h4>Зеленый чай или улун</h4>
+                            <p class="chosen-dish">Чай не выбран</p>
+                        </div>
+                        <div class="order-entry" data-category="pastry">
+                            <h4>Выпечка</h4>
+                            <p class="chosen-dish">Выпечка не выбрана</p>
+                        </div>
+                        <div class="order-total">
+                            <h4>Стоимость заказа</h4>
+                            <p class="order-total-value">0 ₽</p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="black-tea" value="">
+                    <input type="hidden" name="green-tea" value="">
+                    <input type="hidden" name="pastry" value="">
+                    <label for="comment">Комментарий к заказу</label>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
+                </div>
+                <div class="order-column">
+                    <h3>Ваши данные</h3>
+                    <label for="name">Имя</label>
+                    <input id="name" name="name" type="text" required>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                    <label class="checkbox-label">
+                        <input name="subscribe" type="checkbox" checked>
+                        Получать информацию о скидках и акциях
+                    </label>
+                    <label for="phone">Номер телефона</label>
+                    <input id="phone" name="phone" type="tel" required>
+                    <label for="address">Адрес доставки</label>
+                    <input id="address" name="address" type="text" required>
+                    <p class="form-note">Доставка осуществляется только по Москве</p>
+                    <p class="delivery-title">Время доставки:</p>
+                    <label class="radio-label">
+                        <input name="delivery-time" type="radio" value="fast" checked>
+                        Как можно скорее
+                    </label>
+                    <label class="radio-label">
+                        <input name="delivery-time" type="radio" value="selected">
+                        К указанному времени
+                    </label>
+                    <label for="time">Укажите время доставки</label>
+                    <input id="time" name="time" type="time" min="07:00" max="23:00">
+                    <p class="form-note">Доступное время доставки с 7:00 до 23:00</p>
+                    <div class="order-buttons">
+                        <button type="reset">Сбросить</button>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="shop-footer">
+        <ul>
+            <li>Телефон: <a href="tel:+79777777777">+79777777777</a></li>
+            <li>Электронная почта для связи: <a href="mailto:contact@rutea.onion">contact@rutea.onion</a></li>
+            <li>Адрес: 107031, г. Москва, ул. Большая Лубянка, д. 1</li>
+        </ul>
+    </footer>
+</body>
+</html>
