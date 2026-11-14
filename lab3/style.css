@@ -114,10 +114,13 @@ section h2 {
     margin-bottom: 25px;
 }
 
-.reviews {
-    display: grid; 
-    grid-template-columns: repeat(2, auto);
-    gap: 20px; 
+.reviews-pair {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .review blockquote {
@@ -134,6 +137,7 @@ section h2 {
     display: flex;
     gap: 25px;
     flex-flow: row nowrap;
+    flex: 0 0 calc(50% - 15px);
 }
 
 table {
@@ -168,8 +172,9 @@ th {
         width: 500px;
     }
 
-    .reviews {
-        grid-template-columns: 1fr;
+    .reviews-pair {
+        flex-direction: column;
+        gap: 0;
     }
 
     .review {
