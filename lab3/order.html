@@ -12,6 +12,7 @@
     <title>RuTea - Собрать заказ</title>
 </head>
 <body>
+    <noscript>Пожалуйста включите Javascript для просмотра страницы</noscript>
     <header>
         <h1>RuTea</h1>
         <nav>
@@ -24,84 +25,27 @@
     </header>
     <main class="lunch-main">
         <h2 class="page-title">Собрать заказ</h2>
-        <section class="menu-section">
+        <section class="menu-section" data-category="black-tea">
             <h2>Черный чай</h2>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="images/grey.jpg" alt="Черный чай Эрл Грей">
-                    <p class="dish-price">180 ₽</p>
-                    <p class="dish-name">Эрл Грей с бергамотом</p>
-                    <p class="dish-weight">400 мл</p>
-                    <button type="button">Добавить</button>
-                </div>
-                <div class="dish">
-                    <img src="images/assam.jpg" alt="Черный чай Ассам">
-                    <p class="dish-price">170 ₽</p>
-                    <p class="dish-name">Классический Ассам</p>
-                    <p class="dish-weight">400 мл</p>
-                    <button type="button">Добавить</button>
-                </div>
-                <div class="dish">
-                    <img src="images/grey.jpg" alt="Пряный чай масала">
-                    <p class="dish-price">220 ₽</p>
-                    <p class="dish-name">Пряный чай масала с молоком</p>
-                    <p class="dish-weight">400 мл</p>
-                    <button type="button">Добавить</button>
-                </div>
-            </div>
+            <div class="dishes"> </div>
         </section>
-        <section class="menu-section">
+        <section class="menu-section" data-category="green-tea">
             <h2>Зеленый чай и улуны</h2>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="images/tea.jpg" alt="Зеленый чай сенча">
-                    <p class="dish-price">190 ₽</p>
-                    <p class="dish-name">Японская сенча</p>
-                    <p class="dish-weight">400 мл</p>
-                    <button type="button">Добавить</button>
-                </div>
-                <div class="dish">
-                    <img src="images/tea.jpg" alt="Зеленый чай с жасмином">
-                    <p class="dish-price">200 ₽</p>
-                    <p class="dish-name">Зеленый чай с жасмином</p>
-                    <p class="dish-weight">400 мл</p>
-                    <button type="button">Добавить</button>
-                </div>
-                <div class="dish">
-                    <img src="images/assam.jpg" alt="Молочный улун">
-                    <p class="dish-price">230 ₽</p>
-                    <p class="dish-name">Молочный улун</p>
-                    <p class="dish-weight">400 мл</p>
-                    <button type="button">Добавить</button>
-                </div>
-            </div>
+            <div class="dishes"></div>
         </section>
-        <section class="menu-section">
+        <section class="menu-section" data-category="pastry">
             <h2>Выпечка к чаю</h2>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="images/cr.jpg" alt="Круассан">
-                    <p class="dish-price">160 ₽</p>
-                    <p class="dish-name">Круассан с миндальным кремом</p>
-                    <p class="dish-weight">120 г</p>
-                    <button type="button">Добавить</button>
-                </div>
-                <div class="dish">
-                    <img src="images/xleb.jpg" alt="Булочка с корицей">
-                    <p class="dish-price">140 ₽</p>
-                    <p class="dish-name">Булочка с корицей</p>
-                    <p class="dish-weight">110 г</p>
-                    <button type="button">Добавить</button>
-                </div>
-                <div class="dish">
-                    <img src="images/xleb_mnoga.jpg" alt="Лимонный тарт">
-                    <p class="dish-price">210 ₽</p>
-                    <p class="dish-name">Лимонный тарт</p>
-                    <p class="dish-weight">130 г</p>
-                    <button type="button">Добавить</button>
-                </div>
-            </div>
+            <div class="dishes"></div>
         </section>
+        <template id="dish-template">
+            <div class="dish" data-dish="">
+                <img src="" alt="" class="dish-image">
+                <p class="dish-price"></p>
+                <p class="dish-name"></p>
+                <p class="dish-weight"></p>
+                <button type="button" aria-pressed="false">Добавить</button>
+            </div>
+        </template>
         <section class="order-section" id="make-order">
             <h2>Сделать заказ</h2>
             <form class="order-form" action="#" method="post">

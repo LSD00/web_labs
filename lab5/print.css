@@ -1,0 +1,68 @@
+body {
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12pt;
+}
+
+header {
+    position: static;
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: none;
+    padding: 0 0 20px 0;
+}
+
+nav,
+button {
+    display: none;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+}
+
+section {
+    padding: 0;
+    margin-bottom: 25px;
+    box-shadow: none;
+    break-inside: avoid;
+}
+
+.dishes {
+    display: block;
+}
+
+.dish {
+    filter: none;
+    border: 1px solid #999999;
+    margin-bottom: 15px;
+    padding: 15px;
+    break-inside: avoid;
+}
+
+.dish img {
+    width: 180px;
+    height: 120px;
+}
+
+#shop-footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #999999;
+}
+
+#shop-footer ul {
+    display: block;
+}
+
+#shop-footer a {
+    color: #000000;
+}
+
+.order-section {
+    display: none;
+}
