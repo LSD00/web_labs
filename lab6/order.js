@@ -158,7 +158,6 @@ orderForm.addEventListener('submit', event => {
         return;
     }
 
-    // У статической версии сайта нет обработчика заказов.
     if (orderForm.getAttribute('action') === '#') {
         event.preventDefault();
         orderStatus.textContent = 'Комбо собрано. Это учебный заказ, данные не отправлены.';
