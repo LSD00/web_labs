@@ -11,7 +11,6 @@ function renderMenu() {
             .filter(dish => dish.category === category)
             .sort((a, b) => a.name.localeCompare(b.name, 'ru'));
 
-        // Повторная загрузка меню не создаёт дублирующиеся карточки.
         container.replaceChildren();
 
         categoryDishes.forEach(dish => {
